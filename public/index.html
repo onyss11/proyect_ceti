@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="css/output.css"> -->
+    <title>Garden</title>
+</head>
+
+<body class="bg-red-700">
+    <!-- <aside id="default-sidebar" class="fixed top-0 left-0 z-40 h-screen transition-transform -translate-x-full sm:translate-x-0"> -->
+    <aside id="default-sidebar" class="fixed bottom-0 left-0 z-40 w-full transition-transform sm:w-auto sm:h-auto sm:top-0 sm:left-0 sm:translate-x-0">
+
+    <!-- <aside id="default-sidebar" class="fixed sm:bottom-0 sm:left-0 sm:right-0"> -->
+        
+        <!-- <div class="h-full flex flex-col x-6 px-3 py-4 bg-gray-50 dark:bg-gray-800"> -->
+        <div class="h-full justify-center flex x-6 px-3 py-3 sm:flex-col bg-gray-50 dark:bg-gray-800">
+        
+            <!-- logo -->
+            <div class="flex sm:items-start max-sm:hidden sm:block">
+                <a href="#">
+                    <img src="img/logo2.png" class="h-10" alt="IMSS" />
+                </a>
+            </div>
+
+            <div class="flex sm:justify-center sm:flex-grow sm:flex-col">
+                <ul class="max-sm:flex max-sm:space-x-4 sm:space-y-8 sm:font-medium">
+                    <li>
+                        <a href="#"class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="M200 896V576H80l400-360 200 177V276h80v191l120 108.574H760V896H565V656H395v240H200Zm195-410h170q0-33-25.5-54.5T480 410q-34 0-59.5 21.342Q395 452.685 395 486Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="M78 504q0-89.135 36.5-169.067Q151 255 219 197l56 61q-55 46-84.5 110.543Q161 433.085 161 504H78Zm722 0q0-71-28-135.5T689 258l56-61q68 58 103 137.69T883 504h-83ZM117 878v-95h93V505q0-93.085 53.5-168.042Q317 262 407 241.583V218q0-30.5 21.458-50.75Q449.917 147 480 147q30.083 0 51.542 20.25Q553 187.5 553 218v23.583Q644 262 698 336.458 752 410.915 752 505v278h92v95H117Zm363-316Zm.5 439q-35.45 0-61.975-25.85T392 913h177q0 37-26.231 62.5-26.232 25.5-62.269 25.5ZM304 783h353V505q0-74-51-126t-125-52q-74 0-125.5 52T304 505v278Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="m375.565 990.131-20.566-130.522q-15.608-5.304-34.065-15.891-18.456-10.587-31.63-21.326l-121.956 56.261L61.347 691.478l111.391-81.261q-1.434-7.304-1.934-17.108-.5-9.805-.5-17.109 0-7.304.5-17.109.5-9.804 1.934-17.108L61.347 459.957l106.001-186.045 123.087 55.696q12.608-10.174 30.782-20.478 18.174-10.304 33.782-15.174l20.566-132.652h208.87l20.566 131.652q15.608 5.87 34.282 15.674 18.674 9.804 31.413 20.978l122.522-55.696 105.435 186.045-111.957 79.826q1.435 8.304 2.218 18.108.782 9.805.782 18.109 0 8.304-.782 17.609-.783 9.304-2.218 17.608l111.957 80.261-106.001 187.175-122.522-56.261q-13.173 10.739-30.847 21.543-17.674 10.805-34.282 15.674l-20.566 130.522h-208.87ZM478.87 706q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29.566 0-49.783-20.5Q408.87 605 408.87 576t20.217-49.5Q449.304 506 478.87 506q29 0 49.5 20.5t20.5 49.5q0 29-20.5 49.5t-49.5 20.5Zm1.13-70Zm-39.478 334.913h78.391l14.565-111.435q33.565-8 63.913-25t54.348-42.696l106 46 34.913-64.652-92.87-67.869q4-17.565 6.783-34.631 2.783-17.065 2.783-34.63t-2.283-34.63q-2.283-17.066-7.283-34.631l93.435-67.869-35.478-64.652-105.435 46q-23-27.131-53.13-45.479-30.131-18.348-65.696-22.782l-14-110.87h-78.956l-13.435 110.87q-35.13 6.434-65.761 24.282-30.63 17.848-54.196 43.979l-104.869-46-35.478 64.652 92.304 67.304q-4 17.565-6.782 34.913-2.783 17.348-2.783 34.913 0 17.565 2.783 35.196 2.782 17.63 6.782 34.63l-92.304 67.304 35.478 64.652 104.869-46q24.566 25.131 55.196 42.696 30.631 17.565 64.761 25.565l13.435 110.87Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </aside>
+
+    <!-- <aside id="default-sidebar" class="fixed top-0 left-0 z-40 h-screen transition-transform -translate-x-full sm:translate-x-0">
+        <div class="h-full flex flex-col x-6 px-3 py-4 bg-gray-50 dark:bg-gray-800">
+            
+            <div class="items-start justify-center hidden sm:block">
+                <a href="#">
+                    <img src="img/logo2.png" class="h-10" alt="IMSS" />
+                </a>
+            </div>
+
+            <div class="flex flex-col items-center justify-center flex-grow">
+                <ul class="space-y-8 font-medium">
+                    <li>
+                        <a href="#"class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="M200 896V576H80l400-360 200 177V276h80v191l120 108.574H760V896H565V656H395v240H200Zm195-410h170q0-33-25.5-54.5T480 410q-34 0-59.5 21.342Q395 452.685 395 486Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="M78 504q0-89.135 36.5-169.067Q151 255 219 197l56 61q-55 46-84.5 110.543Q161 433.085 161 504H78Zm722 0q0-71-28-135.5T689 258l56-61q68 58 103 137.69T883 504h-83ZM117 878v-95h93V505q0-93.085 53.5-168.042Q317 262 407 241.583V218q0-30.5 21.458-50.75Q449.917 147 480 147q30.083 0 51.542 20.25Q553 187.5 553 218v23.583Q644 262 698 336.458 752 410.915 752 505v278h92v95H117Zm363-316Zm.5 439q-35.45 0-61.975-25.85T392 913h177q0 37-26.231 62.5-26.232 25.5-62.269 25.5ZM304 783h353V505q0-74-51-126t-125-52q-74 0-125.5 52T304 505v278Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="m375.565 990.131-20.566-130.522q-15.608-5.304-34.065-15.891-18.456-10.587-31.63-21.326l-121.956 56.261L61.347 691.478l111.391-81.261q-1.434-7.304-1.934-17.108-.5-9.805-.5-17.109 0-7.304.5-17.109.5-9.804 1.934-17.108L61.347 459.957l106.001-186.045 123.087 55.696q12.608-10.174 30.782-20.478 18.174-10.304 33.782-15.174l20.566-132.652h208.87l20.566 131.652q15.608 5.87 34.282 15.674 18.674 9.804 31.413 20.978l122.522-55.696 105.435 186.045-111.957 79.826q1.435 8.304 2.218 18.108.782 9.805.782 18.109 0 8.304-.782 17.609-.783 9.304-2.218 17.608l111.957 80.261-106.001 187.175-122.522-56.261q-13.173 10.739-30.847 21.543-17.674 10.805-34.282 15.674l-20.566 130.522h-208.87ZM478.87 706q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29.566 0-49.783-20.5Q408.87 605 408.87 576t20.217-49.5Q449.304 506 478.87 506q29 0 49.5 20.5t20.5 49.5q0 29-20.5 49.5t-49.5 20.5Zm1.13-70Zm-39.478 334.913h78.391l14.565-111.435q33.565-8 63.913-25t54.348-42.696l106 46 34.913-64.652-92.87-67.869q4-17.565 6.783-34.631 2.783-17.065 2.783-34.63t-2.283-34.63q-2.283-17.066-7.283-34.631l93.435-67.869-35.478-64.652-105.435 46q-23-27.131-53.13-45.479-30.131-18.348-65.696-22.782l-14-110.87h-78.956l-13.435 110.87q-35.13 6.434-65.761 24.282-30.63 17.848-54.196 43.979l-104.869-46-35.478 64.652 92.304 67.304q-4 17.565-6.782 34.913-2.783 17.348-2.783 34.913 0 17.565 2.783 35.196 2.782 17.63 6.782 34.63l-92.304 67.304 35.478 64.652 104.869-46q24.566 25.131 55.196 42.696 30.631 17.565 64.761 25.565l13.435 110.87Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </aside> -->
+
+    <!-- Elementos  -->
+    <div class="p-4 h-auto bg-yellow-300 sm:ml-16 "> <!--Backgrond amarillo con un padding de 4 y responsive, se elimina el margin-left si es igual o mayor a movil -->
+        <section class=" p-1 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+            
+            <div class="grid grid-cols-1 sm:grid-flow-row-dense sm:grid-cols-3 gap-4">
+
+                <div class="items-center p-2 bg-gray-300 rounded-lg h-full sm:col-span-2 sm:px-6"> <!--Saludos y hora-->
+                    <!-- Saludos  -->
+                    <div class="flex justify-between items-center">
+                        <h1 class="font-sans">Buenos dias</h1>
+                        <h1>2:50</h1>
+                    </div>
+
+                    <!-- Imagen -->
+                    <div class="flex justify-center bg-gray-200 my-4">
+                        <svg class="h-56 p-6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512"><path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z"/></svg>
+                    </div>    
+                </div> 
+                
+                <div class="items-center bg-gray-300 rounded-lg p-2 h-full"> <!--tiempo de 3 dias y su temperatura-->
+                    
+                    <div class="flex justify-center">
+                        <svg class="flex-shrink-0 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                        <path d="M252.13 910.131q-93.123 0-159.127-65.274Q27 779.582 27 686.13q0-81.391 50.566-144.63 50.565-63.24 130.391-76.37 22.261-98.696 98.619-160.761t175.591-62.065q114.095 0 193.921 82.065t84.348 197.761v24q73.696 3.087 123.131 54.528 49.435 51.442 49.435 127.472 0 75.171-53.415 128.586Q826.171 910.131 751 910.131H252.13Zm0-79.218h497.74q42.32 0 73.116-30.587T853.782 727q0-42.739-30.796-73.326-30.796-30.587-73.116-30.587h-68.088V532.87q0-88.42-59.104-149.601-59.104-61.182-144.414-61.182-86.568 0-145.807 63.283-59.239 63.282-59.239 153.717H249.13q-59.892 0-101.402 41.979-41.51 41.978-41.51 103.825 0 60.848 42.51 103.435t103.402 42.587ZM480 576Z"/>
+                        </svg>
+                        <h1>23°</h1>                  
+                    </div>
+                </div>
+                
+                <!-- Cards -->
+                <div class="bg-gray-300 h-full p-4 rounded-lg sm:col-span-2">
+                    <div class="">
+                        <ul class="grid grid-cols-1 gap-4 list-none sm:grid-cols-2">
+                            <!-- Humedady -->
+                            <li class="flex items-center p-4 rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                                
+                                    <div class="flex-shrink-0">
+                                      <svg class="h-12 w-12 text-gray-300" viewBox="0 0 20 20" fill="currentColor">
+                                        <path d="M10 12a2 2 0 100-4 2 2 0 000 4z" />
+                                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm0-2a6 6 0 100-12 6 6 0 000 12z" clip-rule="evenodd" />
+                                      </svg>
+                                    </div>
+                                    <div class="ml-4">
+                                      <h1 class="text-lg font-bold text-gray-900">Título de la tarjeta</h1>
+                                      <h1 class="text-sm font-medium text-gray-700">Descripción de la tarjeta</h1>
+                                    </div>
+                                    <div class="ml-auto">
+                                      
+                                        <label for="themeSwitcherThree" class="themeSwitcherThree relative inline-flex cursor-pointer select-none items-center">
+                                            <input type="checkbox" name="themeSwitcherThree" id="themeSwitcherThree" class="sr-only">
+                                            <div class="shadow-card flex h-[46px] w-[82px] items-center justify-center rounded-md bg-white">
+                                               <span class="light bg-primary flex h-9 w-9 items-center justify-center rounded text-white">
+                                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                     <g clip-path="url(#clip0_3128_692)">
+                                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8 0C8.36819 0 8.66667 0.298477 8.66667 0.666667V2C8.66667 2.36819 8.36819 2.66667 8 2.66667C7.63181 2.66667 7.33333 2.36819 7.33333 2V0.666667C7.33333 0.298477 7.63181 0 8 0ZM8 5.33333C6.52724 5.33333 5.33333 6.52724 5.33333 8C5.33333 9.47276 6.52724 10.6667 8 10.6667C9.47276 10.6667 10.6667 9.47276 10.6667 8C10.6667 6.52724 9.47276 5.33333 8 5.33333ZM4 8C4 5.79086 5.79086 4 8 4C10.2091 4 12 5.79086 12 8C12 10.2091 10.2091 12 8 12C5.79086 12 4 10.2091 4 8ZM8.66667 14C8.66667 13.6318 8.36819 13.3333 8 13.3333C7.63181 13.3333 7.33333 13.6318 7.33333 14V15.3333C7.33333 15.7015 7.63181 16 8 16C8.36819 16 8.66667 15.7015 8.66667 15.3333V14ZM2.3411 2.3424C2.60145 2.08205 3.02356 2.08205 3.28391 2.3424L4.23057 3.28906C4.49092 3.54941 4.49092 3.97152 4.23057 4.23187C3.97022 4.49222 3.54811 4.49222 3.28776 4.23187L2.3411 3.28521C2.08075 3.02486 2.08075 2.60275 2.3411 2.3424ZM12.711 11.7682C12.4506 11.5078 12.0285 11.5078 11.7682 11.7682C11.5078 12.0285 11.5078 12.4506 11.7682 12.711L12.7148 13.6577C12.9752 13.918 13.3973 13.918 13.6577 13.6577C13.918 13.3973 13.918 12.9752 13.6577 12.7148L12.711 11.7682ZM0 8C0 7.63181 0.298477 7.33333 0.666667 7.33333H2C2.36819 7.33333 2.66667 7.63181 2.66667 8C2.66667 8.36819 2.36819 8.66667 2 8.66667H0.666667C0.298477 8.66667 0 8.36819 0 8ZM14 7.33333C13.6318 7.33333 13.3333 7.63181 13.3333 8C13.3333 8.36819 13.6318 8.66667 14 8.66667H15.3333C15.7015 8.66667 16 8.36819 16 8C16 7.63181 15.7015 7.33333 15.3333 7.33333H14ZM4.23057 11.7682C4.49092 12.0285 4.49092 12.4506 4.23057 12.711L3.28391 13.6577C3.02356 13.918 2.60145 13.918 2.3411 13.6577C2.08075 13.3973 2.08075 12.9752 2.3411 12.7148L3.28776 11.7682C3.54811 11.5078 3.97022 11.5078 4.23057 11.7682ZM13.6577 3.28521C13.918 3.02486 13.918 2.60275 13.6577 2.3424C13.3973 2.08205 12.9752 2.08205 12.7148 2.3424L11.7682 3.28906C11.5078 3.54941 11.5078 3.97152 11.7682 4.23187C12.0285 4.49222 12.4506 4.49222 12.711 4.23187L13.6577 3.28521Z" fill="currentColor"></path>
+                                                     </g>
+                                                     <defs>
+                                                        <clipPath id="clip0_3128_692">
+                                                           <rect width="16" height="16" fill="white"></rect>
+                                                        </clipPath>
+                                                     </defs>
+                                                  </svg>
+                                               </span>
+                                               <span class="dark text-body-color flex h-9 w-9 items-center justify-center rounded">
+                                                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M8.0547 1.67334C8.18372 1.90227 8.16622 2.18562 8.01003 2.39693C7.44055 3.16737 7.16651 4.11662 7.23776 5.07203C7.30901 6.02744 7.72081 6.92554 8.39826 7.60299C9.07571 8.28044 9.97381 8.69224 10.9292 8.76349C11.8846 8.83473 12.8339 8.5607 13.6043 7.99122C13.8156 7.83502 14.099 7.81753 14.3279 7.94655C14.5568 8.07556 14.6886 8.32702 14.6644 8.58868C14.5479 9.84957 14.0747 11.0512 13.3002 12.053C12.5256 13.0547 11.4818 13.8152 10.2909 14.2454C9.09992 14.6756 7.81108 14.7577 6.57516 14.4821C5.33925 14.2065 4.20738 13.5846 3.312 12.6892C2.41661 11.7939 1.79475 10.662 1.51917 9.42608C1.24359 8.19017 1.32569 6.90133 1.75588 5.71038C2.18606 4.51942 2.94652 3.47561 3.94828 2.70109C4.95005 1.92656 6.15168 1.45335 7.41257 1.33682C7.67423 1.31264 7.92568 1.44442 8.0547 1.67334ZM6.21151 2.96004C5.6931 3.1476 5.20432 3.41535 4.76384 3.75591C3.96242 4.37553 3.35405 5.21058 3.00991 6.16334C2.66576 7.11611 2.60008 8.14718 2.82054 9.13591C3.04101 10.1246 3.5385 11.0301 4.25481 11.7464C4.97111 12.4627 5.87661 12.9602 6.86534 13.1807C7.85407 13.4012 8.88514 13.3355 9.8379 12.9913C10.7907 12.6472 11.6257 12.0388 12.2453 11.2374C12.5859 10.7969 12.8536 10.3081 13.0412 9.78974C12.3391 10.0437 11.586 10.1495 10.8301 10.0931C9.55619 9.99813 8.35872 9.44907 7.45545 8.5458C6.55218 7.64253 6.00312 6.44506 5.90812 5.17118C5.85174 4.4152 5.9575 3.66212 6.21151 2.96004Z" fill="currentColor"></path>
+                                                  </svg>
+                                               </span>
+                                            </div>
+                                         </label>
+
+                                    </div>
+                                
+                                
+                            </li>
+
+
+                            <li class="grid justify-items-center rounded-lg bg-gray-200 w-full">
+                                <div class="">
+                                    <h1>Humedad</h1>
+                                </div>
+                            </li>
+                            <li class="grid justify-items-center rounded-lg bg-gray-200 w-full">
+                                <div class="">
+                                    <h1>Humedad</h1>
+                                </div>
+                            </li>
+                            <li class="grid justify-items-center rounded-lg bg-gray-200 w-full">
+                                <div class="">
+                                    <h1>Humedad</h1>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-green-500 h-full">4</div>
+            </div>
+
+            <!-- <div class="flex flex-col sm:flex-row">
+                <article class="w-full h-1/3 bg-red-600 sm:w-2/3">Saludos, fecha y hora dinamicos</article>
+                <article class="w-full h-1/3 bg-purple-700 sm:w-1/3">temperatura de los dias</article>
+                <article class="w-full h-1/3 bg-purple-700 sm:w-1/3">temperatura de los dias</article> -->
+            </div>
+        </section>
+    </div>
+
+    
+
+</body>
+
+</html>
