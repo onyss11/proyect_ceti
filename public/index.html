@@ -28,9 +28,9 @@
 
             <div class="flex sm:justify-center sm:flex-grow sm:flex-col">
                 <ul class="max-sm:flex max-sm:space-x-4 sm:space-y-8 sm:font-medium">
-                    <li>
+                    <li>                        
                         <a href="#"class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
-                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                            <svg class="flex-shrink-0 w-6 h-6 transition duration-75 text-gray-900 dark:text-white"
                                 xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
                                 <path d="M200 896V576H80l400-360 200 177V276h80v191l120 108.574H760V896H565V656H395v240H200Zm195-410h170q0-33-25.5-54.5T480 410q-34 0-59.5 21.342Q395 452.685 395 486Z" />
                             </svg>
@@ -100,7 +100,7 @@
     </aside> -->
 
     <!-- Elementos  -->
-    <div class="p-4 sm:ml-16 "> <!--Backgrond amarillo con un padding de 4 y responsive, se elimina el margin-left si es igual o mayor a movil -->
+    <div class="p-4 max-sm:mb-16 sm:ml-16 "> <!--Backgrond amarillo con un padding de 4 y responsive, se elimina el margin-left si es igual o mayor a movil -->
         <section class=" p-1 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
             
             <div class="grid grid-cols-1 sm:grid-flow-row-dense sm:grid-cols-3 gap-4">
@@ -114,7 +114,7 @@
                     </div>
 
                     <!-- Imagen -->
-                    <div class="flex justify-center bg-gray-200 my-4">
+                    <div class="flex justify-center overflow-hidden bg-gray-200 my-4">
                         <svg class="h-56 p-6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512"><path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z"/></svg>
                     </div>    
                 </div> 
@@ -181,22 +181,24 @@
 
                             </li>
 
+                            <!-- Riego Automatico -->
                             <li class="h-[170px] w-auto overflow-hidden rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
                                 
                                 <div class="relative h-full w-full ">
                                     <svg class="absolute -left-12 h-full text-gray-300 opacity-60"
                                         xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
-                                    <path d="M580.118 806Q601 806 615.5 791.382q14.5-14.617 14.5-35.5Q630 735 615.382 720.5q-14.617-14.5-35.5-14.5Q559 706 544.5 720.618q-14.5 14.617-14.5 35.5Q530 777 544.618 791.5q14.617 14.5 35.5 14.5ZM378 800l246-246-42-42-246 246 42 42Zm2.118-194Q401 606 415.5 591.382q14.5-14.617 14.5-35.5Q430 535 415.382 520.5q-14.617-14.5-35.5-14.5Q359 506 344.5 520.618q-14.5 14.617-14.5 35.5Q330 577 344.618 591.5q14.617 14.5 35.5 14.5Zm99.824 384.131q-143.025 0-238.549-98.05Q145.869 794.032 145.869 648q0-103.341 82.891-225.388Q311.652 300.565 480 157.347q168.348 143.218 251.522 265.265Q814.696 544.659 814.696 648q0 146.032-95.864 244.081-95.865 98.05-238.89 98.05Z"/>
+                                    <!-- <path d="M580.118 806Q601 806 615.5 791.382q14.5-14.617 14.5-35.5Q630 735 615.382 720.5q-14.617-14.5-35.5-14.5Q559 706 544.5 720.618q-14.5 14.617-14.5 35.5Q530 777 544.618 791.5q14.617 14.5 35.5 14.5ZM378 800l246-246-42-42-246 246 42 42Zm2.118-194Q401 606 415.5 591.382q14.5-14.617 14.5-35.5Q430 535 415.382 520.5q-14.617-14.5-35.5-14.5Q359 506 344.5 520.618q-14.5 14.617-14.5 35.5Q330 577 344.618 591.5q14.617 14.5 35.5 14.5Zm99.824 384.131q-143.025 0-238.549-98.05Q145.869 794.032 145.869 648q0-103.341 82.891-225.388Q311.652 300.565 480 157.347q168.348 143.218 251.522 265.265Q814.696 544.659 814.696 648q0 146.032-95.864 244.081-95.865 98.05-238.89 98.05Z"/> -->
+                                    <path d="M442.652 933.348V625.479h-20q-64-1.131-119.935-26.196t-99.935-70.631q-45.076-46.003-68.451-106.51Q110.956 361.635 110.956 296v-88.479h86.479q63.733 0 122.356 25.09 58.623 25.089 104.861 71.171 31.305 32.305 52.017 71.917 20.712 39.612 30.722 83.474 6.31-9.421 13.282-18.026t14.24-17.365q46.232-46.082 104.848-71.171 58.617-25.09 123.369-25.09h86.479V416q0 65.635-24.884 126.142-24.884 60.507-69.942 106.51-45 45.566-101.217 70.131-56.218 24.565-117.653 25.696h-18v188.869h-75.261Z"/>
                                     </svg>
                     
                                     <!-- Texto y toogle-->
                     
                                     <div class="absolute w-full h-full py-4 left-1/2 transform -translate-x-1/2">
-                                            <h1 class="text-center font-bold text-gray-300"> Humedad</h1>
+                                            <h1 class="text-center font-bold text-gray-300"> Automatico</h1>
                                             
                                             <div class="flex h-2/3 justify-center gap-10 items-center">
-                                                <h1>Texto de Humedad</h1>
-                                                <h1>98%</h1> <!--Remplaza toggle-->
+                                                <h1>Riego Programado</h1>
+                                                <h1>Toogle</h1> <!--Remplaza toggle-->
                                             </div>
                                     </div>
                                 </div>   
@@ -228,7 +230,9 @@
                             </li>
                         </ul>
                 </div>
-                <div class="bg-green-500 h-full">4</div>
+                <div class="bg-green-500 h-full">4
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque illo nam temporibus nemo, sed ratione mollitia. Necessitatibus ex corporis incidunt, odit veritatis laudantium? Dolorem impedit vitae reprehenderit, eaque doloremque non.
+                </div>
             </div>
 
             <!-- <div class="flex flex-col sm:flex-row">
