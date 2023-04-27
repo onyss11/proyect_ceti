@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- <link rel="stylesheet" href="css/output.css"> -->
+    <title>Garden</title>
+</head>
+
+<body class="bg-gray-100">
+    <!-- <aside id="default-sidebar" class="fixed top-0 left-0 z-40 h-screen transition-transform -translate-x-full sm:translate-x-0"> -->
+    <aside id="default-sidebar" class="fixed bottom-0 left-0 z-40 w-full transition-transform sm:w-auto sm:h-auto sm:top-0 sm:left-0 sm:translate-x-0">
+
+    <!-- <aside id="default-sidebar" class="fixed sm:bottom-0 sm:left-0 sm:right-0"> -->
+        
+        <!-- <div class="h-full flex flex-col x-6 px-3 py-4 bg-gray-50 dark:bg-gray-800"> -->
+        <div class="h-full justify-center flex x-6 px-3 py-3 sm:flex-col bg-gray-50 dark:bg-gray-800">
+        
+            <!-- logo -->
+            <div class="flex sm:items-start max-sm:hidden sm:block">
+                <a href="#">
+                    <img src="img/logo2.png" class="h-10 " alt="IMSS" />
+                </a>
+            </div>
+
+            <div class="flex sm:justify-center sm:flex-grow sm:flex-col">
+                <ul class="max-sm:flex max-sm:space-x-4 sm:space-y-8 sm:font-medium">
+                    <li>                        
+                        <a href="#"class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 transition duration-75 text-cyan-500 dark:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="M200 896V576H80l400-360 200 177V276h80v191l120 108.574H760V896H565V656H395v240H200Zm195-410h170q0-33-25.5-54.5T480 410q-34 0-59.5 21.342Q395 452.685 395 486Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="M78 504q0-89.135 36.5-169.067Q151 255 219 197l56 61q-55 46-84.5 110.543Q161 433.085 161 504H78Zm722 0q0-71-28-135.5T689 258l56-61q68 58 103 137.69T883 504h-83ZM117 878v-95h93V505q0-93.085 53.5-168.042Q317 262 407 241.583V218q0-30.5 21.458-50.75Q449.917 147 480 147q30.083 0 51.542 20.25Q553 187.5 553 218v23.583Q644 262 698 336.458 752 410.915 752 505v278h92v95H117Zm363-316Zm.5 439q-35.45 0-61.975-25.85T392 913h177q0 37-26.231 62.5-26.232 25.5-62.269 25.5ZM304 783h353V505q0-74-51-126t-125-52q-74 0-125.5 52T304 505v278Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="m375.565 990.131-20.566-130.522q-15.608-5.304-34.065-15.891-18.456-10.587-31.63-21.326l-121.956 56.261L61.347 691.478l111.391-81.261q-1.434-7.304-1.934-17.108-.5-9.805-.5-17.109 0-7.304.5-17.109.5-9.804 1.934-17.108L61.347 459.957l106.001-186.045 123.087 55.696q12.608-10.174 30.782-20.478 18.174-10.304 33.782-15.174l20.566-132.652h208.87l20.566 131.652q15.608 5.87 34.282 15.674 18.674 9.804 31.413 20.978l122.522-55.696 105.435 186.045-111.957 79.826q1.435 8.304 2.218 18.108.782 9.805.782 18.109 0 8.304-.782 17.609-.783 9.304-2.218 17.608l111.957 80.261-106.001 187.175-122.522-56.261q-13.173 10.739-30.847 21.543-17.674 10.805-34.282 15.674l-20.566 130.522h-208.87ZM478.87 706q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29.566 0-49.783-20.5Q408.87 605 408.87 576t20.217-49.5Q449.304 506 478.87 506q29 0 49.5 20.5t20.5 49.5q0 29-20.5 49.5t-49.5 20.5Zm1.13-70Zm-39.478 334.913h78.391l14.565-111.435q33.565-8 63.913-25t54.348-42.696l106 46 34.913-64.652-92.87-67.869q4-17.565 6.783-34.631 2.783-17.065 2.783-34.63t-2.283-34.63q-2.283-17.066-7.283-34.631l93.435-67.869-35.478-64.652-105.435 46q-23-27.131-53.13-45.479-30.131-18.348-65.696-22.782l-14-110.87h-78.956l-13.435 110.87q-35.13 6.434-65.761 24.282-30.63 17.848-54.196 43.979l-104.869-46-35.478 64.652 92.304 67.304q-4 17.565-6.782 34.913-2.783 17.348-2.783 34.913 0 17.565 2.783 35.196 2.782 17.63 6.782 34.63l-92.304 67.304 35.478 64.652 104.869-46q24.566 25.131 55.196 42.696 30.631 17.565 64.761 25.565l13.435 110.87Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </aside>
+
+    <!-- <aside id="default-sidebar" class="fixed top-0 left-0 z-40 h-screen transition-transform -translate-x-full sm:translate-x-0">
+        <div class="h-full flex flex-col x-6 px-3 py-4 bg-gray-50 dark:bg-gray-800">
+            
+            <div class="items-start justify-center hidden sm:block">
+                <a href="#">
+                    <img src="img/logo2.png" class="h-10" alt="IMSS" />
+                </a>
+            </div>
+
+            <div class="flex flex-col items-center justify-center flex-grow">
+                <ul class="space-y-8 font-medium">
+                    <li>
+                        <a href="#"class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="M200 896V576H80l400-360 200 177V276h80v191l120 108.574H760V896H565V656H395v240H200Zm195-410h170q0-33-25.5-54.5T480 410q-34 0-59.5 21.342Q395 452.685 395 486Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="M78 504q0-89.135 36.5-169.067Q151 255 219 197l56 61q-55 46-84.5 110.543Q161 433.085 161 504H78Zm722 0q0-71-28-135.5T689 258l56-61q68 58 103 137.69T883 504h-83ZM117 878v-95h93V505q0-93.085 53.5-168.042Q317 262 407 241.583V218q0-30.5 21.458-50.75Q449.917 147 480 147q30.083 0 51.542 20.25Q553 187.5 553 218v23.583Q644 262 698 336.458 752 410.915 752 505v278h92v95H117Zm363-316Zm.5 439q-35.45 0-61.975-25.85T392 913h177q0 37-26.231 62.5-26.232 25.5-62.269 25.5ZM304 783h353V505q0-74-51-126t-125-52q-74 0-125.5 52T304 505v278Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path d="m375.565 990.131-20.566-130.522q-15.608-5.304-34.065-15.891-18.456-10.587-31.63-21.326l-121.956 56.261L61.347 691.478l111.391-81.261q-1.434-7.304-1.934-17.108-.5-9.805-.5-17.109 0-7.304.5-17.109.5-9.804 1.934-17.108L61.347 459.957l106.001-186.045 123.087 55.696q12.608-10.174 30.782-20.478 18.174-10.304 33.782-15.174l20.566-132.652h208.87l20.566 131.652q15.608 5.87 34.282 15.674 18.674 9.804 31.413 20.978l122.522-55.696 105.435 186.045-111.957 79.826q1.435 8.304 2.218 18.108.782 9.805.782 18.109 0 8.304-.782 17.609-.783 9.304-2.218 17.608l111.957 80.261-106.001 187.175-122.522-56.261q-13.173 10.739-30.847 21.543-17.674 10.805-34.282 15.674l-20.566 130.522h-208.87ZM478.87 706q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29.566 0-49.783-20.5Q408.87 605 408.87 576t20.217-49.5Q449.304 506 478.87 506q29 0 49.5 20.5t20.5 49.5q0 29-20.5 49.5t-49.5 20.5Zm1.13-70Zm-39.478 334.913h78.391l14.565-111.435q33.565-8 63.913-25t54.348-42.696l106 46 34.913-64.652-92.87-67.869q4-17.565 6.783-34.631 2.783-17.065 2.783-34.63t-2.283-34.63q-2.283-17.066-7.283-34.631l93.435-67.869-35.478-64.652-105.435 46q-23-27.131-53.13-45.479-30.131-18.348-65.696-22.782l-14-110.87h-78.956l-13.435 110.87q-35.13 6.434-65.761 24.282-30.63 17.848-54.196 43.979l-104.869-46-35.478 64.652 92.304 67.304q-4 17.565-6.782 34.913-2.783 17.348-2.783 34.913 0 17.565 2.783 35.196 2.782 17.63 6.782 34.63l-92.304 67.304 35.478 64.652 104.869-46q24.566 25.131 55.196 42.696 30.631 17.565 64.761 25.565l13.435 110.87Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </aside> -->
+
+    <!-- Elementos  -->
+    <div class="p-4 max-sm:mb-16 sm:ml-16 "> <!--Backgrond amarillo con un padding de 4 y responsive, se elimina el margin-left si es igual o mayor a movil -->
+        <section class=" p-1 border-2 border-gray-200 border-dashed rounded-lg dark:border-gray-700">
+            
+            <div class="grid grid-cols-1 sm:grid-flow-row-dense sm:grid-cols-3 gap-4">
+                
+                 <!--Saludos y hora-->
+                <div class="items-center p-2 bg-gray-200 rounded-lg h-full sm:col-span-2 sm:px-6">
+                    <!-- Texto  -->
+                    <div class="flex justify-between items-center">
+                        <h1 class="font-sans">Buenos dias</h1>
+                        <h1>2:50</h1>
+                    </div>
+
+                    <!-- Imagen -->
+                    <div class="flex justify-center overflow-hidden bg-gray-200 my-4">
+                        <svg class="h-56 p-6" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" fill="currentColor" viewBox="0 0 640 512"><path d="M480 80C480 35.82 515.8 0 560 0C604.2 0 640 35.82 640 80C640 124.2 604.2 160 560 160C515.8 160 480 124.2 480 80zM0 456.1C0 445.6 2.964 435.3 8.551 426.4L225.3 81.01C231.9 70.42 243.5 64 256 64C268.5 64 280.1 70.42 286.8 81.01L412.7 281.7L460.9 202.7C464.1 196.1 472.2 192 480 192C487.8 192 495 196.1 499.1 202.7L631.1 419.1C636.9 428.6 640 439.7 640 450.9C640 484.6 612.6 512 578.9 512H55.91C25.03 512 .0006 486.1 .0006 456.1L0 456.1z"/></svg>
+                    </div>    
+                </div> 
+                
+                 <!--tiempo de 3 dias y su temperatura-->
+                <div class="items-center bg-gray-300 rounded-lg p-2 h-full">
+                    
+                    <div class="flex justify-center">
+                        <svg class="flex-shrink-0 w-12" xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                        <path d="M252.13 910.131q-93.123 0-159.127-65.274Q27 779.582 27 686.13q0-81.391 50.566-144.63 50.565-63.24 130.391-76.37 22.261-98.696 98.619-160.761t175.591-62.065q114.095 0 193.921 82.065t84.348 197.761v24q73.696 3.087 123.131 54.528 49.435 51.442 49.435 127.472 0 75.171-53.415 128.586Q826.171 910.131 751 910.131H252.13Zm0-79.218h497.74q42.32 0 73.116-30.587T853.782 727q0-42.739-30.796-73.326-30.796-30.587-73.116-30.587h-68.088V532.87q0-88.42-59.104-149.601-59.104-61.182-144.414-61.182-86.568 0-145.807 63.283-59.239 63.282-59.239 153.717H249.13q-59.892 0-101.402 41.979-41.51 41.978-41.51 103.825 0 60.848 42.51 103.435t103.402 42.587ZM480 576Z"/>
+                        </svg>
+                        <h1>23°</h1>                  
+                    </div>
+                </div>
+                
+                <!-- Cards -->
+                <div class="h-full rounded-lg sm:col-span-2">
+                        <ul class="grid grid-cols-1 gap-4 list-none sm:grid-cols-2 overflow-auto">
+                            
+                            <!-- Humedad -->
+                            <li class=" h-[170px] w-auto overflow-hidden rounded-lg border-solid border-2 border-gray-300 bg-gray-200  transition duration-500 hover:bg-cyan-500 dark:hover:bg-cyan-500 hover:shadow-lg md:hover:border-cyan-600">
+                                
+                                <div class="relative h-full w-full ">
+                                    <svg class="absolute -left-12 h-full text-gray-300 opacity-60"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                    <path d="M580.118 806Q601 806 615.5 791.382q14.5-14.617 14.5-35.5Q630 735 615.382 720.5q-14.617-14.5-35.5-14.5Q559 706 544.5 720.618q-14.5 14.617-14.5 35.5Q530 777 544.618 791.5q14.617 14.5 35.5 14.5ZM378 800l246-246-42-42-246 246 42 42Zm2.118-194Q401 606 415.5 591.382q14.5-14.617 14.5-35.5Q430 535 415.382 520.5q-14.617-14.5-35.5-14.5Q359 506 344.5 520.618q-14.5 14.617-14.5 35.5Q330 577 344.618 591.5q14.617 14.5 35.5 14.5Zm99.824 384.131q-143.025 0-238.549-98.05Q145.869 794.032 145.869 648q0-103.341 82.891-225.388Q311.652 300.565 480 157.347q168.348 143.218 251.522 265.265Q814.696 544.659 814.696 648q0 146.032-95.864 244.081-95.865 98.05-238.89 98.05Z"/>
+                                    </svg>
+                    
+                                    <!-- Texto y toogle-->
+                    
+                                    <div class="absolute w-full h-full py-4 left-1/2 transform -translate-x-1/2">
+                                            <h1 class="text-center font-bold text-gray-300"> Humedad</h1>
+                                            
+                                            <div class="flex h-2/3 justify-center gap-10 items-center">
+                                                <h1>Texto de Humedad</h1>
+                                                <h1>98%</h1> <!--Remplaza toggle-->
+                                            </div>
+                                    </div>
+                                </div>   
+                                
+                                
+                            </li>
+
+
+                            <li class="h-[170px] w-auto overflow-hidden rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-300l">
+                                
+                                <div class="relative h-full w-full ">
+                                    <svg class="absolute -left-12 h-full text-gray-300 opacity-60"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                    <path d="M580.118 806Q601 806 615.5 791.382q14.5-14.617 14.5-35.5Q630 735 615.382 720.5q-14.617-14.5-35.5-14.5Q559 706 544.5 720.618q-14.5 14.617-14.5 35.5Q530 777 544.618 791.5q14.617 14.5 35.5 14.5ZM378 800l246-246-42-42-246 246 42 42Zm2.118-194Q401 606 415.5 591.382q14.5-14.617 14.5-35.5Q430 535 415.382 520.5q-14.617-14.5-35.5-14.5Q359 506 344.5 520.618q-14.5 14.617-14.5 35.5Q330 577 344.618 591.5q14.617 14.5 35.5 14.5Zm99.824 384.131q-143.025 0-238.549-98.05Q145.869 794.032 145.869 648q0-103.341 82.891-225.388Q311.652 300.565 480 157.347q168.348 143.218 251.522 265.265Q814.696 544.659 814.696 648q0 146.032-95.864 244.081-95.865 98.05-238.89 98.05Z"/>
+                                    </svg>
+                    
+                                    <!-- Texto y toogle-->
+                    
+                                    <div class="absolute w-full h-full py-4 left-1/2 transform -translate-x-1/2">
+                                            <h1 class="text-center font-bold text-gray-300"> Humedad</h1>
+                                            
+                                            <div class="flex h-2/3 justify-center gap-10 items-center">
+                                                <h1>Texto de Humedad</h1>
+                                                <h1>98%</h1> <!--Remplaza toggle-->
+                                            </div>
+                                    </div>
+                                </div> 
+
+                            </li>
+
+                            <!-- Riego Automatico -->
+                            <li class="h-[170px] w-auto overflow-hidden rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                                
+                                <div class="relative h-full w-full ">
+                                    <svg class="absolute -left-12 h-full text-gray-300 opacity-60"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                    <!-- <path d="M580.118 806Q601 806 615.5 791.382q14.5-14.617 14.5-35.5Q630 735 615.382 720.5q-14.617-14.5-35.5-14.5Q559 706 544.5 720.618q-14.5 14.617-14.5 35.5Q530 777 544.618 791.5q14.617 14.5 35.5 14.5ZM378 800l246-246-42-42-246 246 42 42Zm2.118-194Q401 606 415.5 591.382q14.5-14.617 14.5-35.5Q430 535 415.382 520.5q-14.617-14.5-35.5-14.5Q359 506 344.5 520.618q-14.5 14.617-14.5 35.5Q330 577 344.618 591.5q14.617 14.5 35.5 14.5Zm99.824 384.131q-143.025 0-238.549-98.05Q145.869 794.032 145.869 648q0-103.341 82.891-225.388Q311.652 300.565 480 157.347q168.348 143.218 251.522 265.265Q814.696 544.659 814.696 648q0 146.032-95.864 244.081-95.865 98.05-238.89 98.05Z"/> -->
+                                    <path d="M442.652 933.348V625.479h-20q-64-1.131-119.935-26.196t-99.935-70.631q-45.076-46.003-68.451-106.51Q110.956 361.635 110.956 296v-88.479h86.479q63.733 0 122.356 25.09 58.623 25.089 104.861 71.171 31.305 32.305 52.017 71.917 20.712 39.612 30.722 83.474 6.31-9.421 13.282-18.026t14.24-17.365q46.232-46.082 104.848-71.171 58.617-25.09 123.369-25.09h86.479V416q0 65.635-24.884 126.142-24.884 60.507-69.942 106.51-45 45.566-101.217 70.131-56.218 24.565-117.653 25.696h-18v188.869h-75.261Z"/>
+                                    </svg>
+                    
+                                    <!-- Texto y toogle-->
+                    
+                                    <div class="absolute w-full h-full py-4 left-1/2 transform -translate-x-1/2">
+                                            <h1 class="text-center font-bold text-gray-300"> Automatico</h1>
+                                            
+                                            <div class="flex h-2/3 justify-center gap-10 items-center">
+                                                <h1>Riego Programado</h1>
+                                                <h1>Toogle</h1> <!--Remplaza toggle-->
+                                            </div>
+                                    </div>
+                                </div>   
+                                
+                            </li>
+
+                            <!-- Ilumunacion -->
+                            <li class="h-[170px] w-full overflow-hidden rounded-lg bg-gray-100 hover:bg-gray-200 transition-colors duration-300">
+                                
+                                <div class="relative h-full w-full ">
+                                    <svg class="absolute -left-12 h-full text-gray-300 opacity-60"
+                                        xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                    <!-- <path d="M580.118 806Q601 806 615.5 791.382q14.5-14.617 14.5-35.5Q630 735 615.382 720.5q-14.617-14.5-35.5-14.5Q559 706 544.5 720.618q-14.5 14.617-14.5 35.5Q530 777 544.618 791.5q14.617 14.5 35.5 14.5ZM378 800l246-246-42-42-246 246 42 42Zm2.118-194Q401 606 415.5 591.382q14.5-14.617 14.5-35.5Q430 535 415.382 520.5q-14.617-14.5-35.5-14.5Q359 506 344.5 520.618q-14.5 14.617-14.5 35.5Q330 577 344.618 591.5q14.617 14.5 35.5 14.5Zm99.824 384.131q-143.025 0-238.549-98.05Q145.869 794.032 145.869 648q0-103.341 82.891-225.388Q311.652 300.565 480 157.347q168.348 143.218 251.522 265.265Q814.696 544.659 814.696 648q0 146.032-95.864 244.081-95.865 98.05-238.89 98.05Z"/> -->
+                                    <path xmlns="http://www.w3.org/2000/svg" d="M480 990.131q-28.13 0-51.174-12.717-23.044-12.718-30.174-36.848h-14q-27.957-2.826-47.37-24.352-19.413-21.526-19.413-49.214V731.348q-66.565-45.462-104.283-113.842Q175.869 549.125 175.869 466q0-126.461 88.739-215.579 88.74-89.117 215.257-89.117 126.518 0 215.675 89.117Q784.696 339.539 784.696 466q0 83.261-38 151.674-38 68.413-104 113.674V867q0 27.688-19.695 49.214-19.696 21.526-47.088 24.352h-14q-7.695 24.13-31.022 36.848-23.326 12.717-50.891 12.717ZM397.087 867h165.826v-44H397.087v44Zm0-84h165.826v-40H397.087v40Zm109.304-105.087V547.13L599.522 454 564 418.478l-84 84-84-84L360.478 454l93.131 93.13v130.783h52.782Z"/>
+                                    </svg>
+                    
+                                    <!-- Texto y toogle-->
+                    
+                                    <div class="absolute w-full h-full py-4 left-1/2 transform -translate-x-1/2">
+                                            <h1 class="text-center font-bold text-gray-300"> Ilumunacion</h1>
+                                            
+                                            <div class="flex h-2/3 justify-center gap-10 items-center">
+                                                <h1>Iluminar jardin</h1>
+                                                <h1>toogle</h1> <!--Remplaza toggle-->
+                                            </div>
+                                    </div>
+                                </div>   
+                                
+                            </li>
+                        </ul>
+                </div>
+                <div class="container-main flex flex-col dark:bg-slate-600 bg-gray-200 dark:text-white  h-full overflow-hidden rounded-3xl ">
+                    <div class=" flex justify-between max-sm:pb-2 max-sm:px-10 px-16 pt-6">
+                        <h1 class="text-xl">環境數據</h1>
+                        <ion-icon class="text-2xl" name="refresh-outline"></ion-icon>
+                    </div>
+                    <div class=" body justify-center h-full max-sm:py-4">
+                        <ul class="grid  grid-cols-3 justify-items-center h-full max-sm:gap-5 px-10 pb-10 pt-4">
+                            <li class="h-full flex item-center">
+                                <div class=" w-full flex flex-col items-center justify-center h-full ">
+                                    <ion-icon name="swap-horizontal-outline" class="text-cyan-500 text-2xl"></ion-icon>
+                                    <h2 class="text-gray-400">風速</h2>
+                                    <h3 class="font-semibold">16 KM/H</h3>
+                                </div>
+                            </li>
+                            <li class="h-full flex item-center">
+                                <div class=" w-full flex flex-col items-center justify-center h-full ">
+                                    <ion-icon name="swap-horizontal-outline" class="text-cyan-500 text-2xl"></ion-icon>
+                                    <h2 class="text-gray-400">風速</h2>
+                                    <h3 class="font-semibold">16 KM/H</h3>
+                                </div>
+                            </li>
+                            <li class="h-full flex item-center">
+                                <div class=" w-full flex flex-col items-center justify-center h-full ">
+                                    <ion-icon name="swap-horizontal-outline" class="text-cyan-500 text-2xl"></ion-icon>
+                                    <h2 class="text-gray-400">風速</h2>
+                                    <h3 class="font-semibold">16 KM/H</h3>
+                                </div>
+                            </li>
+                            <li class="h-full flex item-center">
+                                <div class=" w-full flex flex-col items-center justify-center h-full ">
+                                    <ion-icon name="swap-horizontal-outline" class="text-cyan-500 text-2xl"></ion-icon>
+                                    <h2 class="text-gray-400">風速</h2>
+                                    <h3 class="font-semibold">16 KM/H</h3>
+                                </div>
+                            </li>
+                            <li class="h-full flex item-center">
+                                <div class=" w-full flex flex-col items-center justify-center h-full ">
+                                    <ion-icon name="swap-horizontal-outline" class="text-cyan-500 text-2xl"></ion-icon>
+                                    <h2 class="text-gray-400">風速</h2>
+                                    <h3 class="font-semibold">16 KM/H</h3>
+                                </div>
+                            </li>
+                            <li class="h-full flex item-center">
+                                <div class=" w-full flex flex-col items-center justify-center h-full ">
+                                    <ion-icon name="swap-horizontal-outline" class="text-cyan-500 text-2xl"></ion-icon>
+                                    <h2 class="text-gray-400">風速</h2>
+                                    <h3 class="font-semibold">16 KM/H</h3>
+                                </div>
+                            </li>
+        
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div class="flex flex-col sm:flex-row">
+                <article class="w-full h-1/3 bg-red-600 sm:w-2/3">Saludos, fecha y hora dinamicos</article>
+                <article class="w-full h-1/3 bg-purple-700 sm:w-1/3">temperatura de los dias</article>
+                <article class="w-full h-1/3 bg-purple-700 sm:w-1/3">temperatura de los dias</article> -->
+            </div>
+        </section>
+    </div>
+
+    
+
+</body>
+
+</html>
