@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="css/output.css"> -->
+    <link rel="stylesheet" href="css/boxed-check.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Document</title>
+</head>
+<body>
+    <aside id="default-sidebar" class="fixed bottom-0 left-0 z-40 w-full transition-transform sm:w-auto sm:h-auto sm:top-0 sm:left-0 sm:translate-x-0">
+
+        <div class="h-full justify-center flex x-6 px-3 py-3 sm:flex-col bg-gray-50 dark:bg-gray-800">
+
+            <!-- logo -->
+            <div class="flex sm:items-start max-sm:hidden sm:block">
+                <a href="#">
+                    <img src="img/logo2.png" class="h-10" alt="IMSS" />
+                </a>
+            </div>
+
+            <div class="flex sm:justify-center sm:flex-grow sm:flex-col">
+                <ul class="max-sm:flex max-sm:space-x-4 sm:space-y-8 sm:font-medium">
+                    <li>
+                        <a href="index.html"
+                            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 transition duration-75 text-gray-900 dark:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path
+                                    d="M200 896V576H80l400-360 200 177V276h80v191l120 108.574H760V896H565V656H395v240H200Zm195-410h170q0-33-25.5-54.5T480 410q-34 0-59.5 21.342Q395 452.685 395 486Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path
+                                    d="M78 504q0-89.135 36.5-169.067Q151 255 219 197l56 61q-55 46-84.5 110.543Q161 433.085 161 504H78Zm722 0q0-71-28-135.5T689 258l56-61q68 58 103 137.69T883 504h-83ZM117 878v-95h93V505q0-93.085 53.5-168.042Q317 262 407 241.583V218q0-30.5 21.458-50.75Q449.917 147 480 147q30.083 0 51.542 20.25Q553 187.5 553 218v23.583Q644 262 698 336.458 752 410.915 752 505v278h92v95H117Zm363-316Zm.5 439q-35.45 0-61.975-25.85T392 913h177q0 37-26.231 62.5-26.232 25.5-62.269 25.5ZM304 783h353V505q0-74-51-126t-125-52q-74 0-125.5 52T304 505v278Z" />
+                            </svg>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#"
+                            class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+                            <svg class="flex-shrink-0 w-6 h-6 text-gray-500 transition duration-75 dark:text-gray-400 group-hover:text-gray-900 dark:group-hover:text-white"
+                                xmlns="http://www.w3.org/2000/svg" viewBox="0 96 960 960" fill="currentColor">
+                                <path
+                                    d="m375.565 990.131-20.566-130.522q-15.608-5.304-34.065-15.891-18.456-10.587-31.63-21.326l-121.956 56.261L61.347 691.478l111.391-81.261q-1.434-7.304-1.934-17.108-.5-9.805-.5-17.109 0-7.304.5-17.109.5-9.804 1.934-17.108L61.347 459.957l106.001-186.045 123.087 55.696q12.608-10.174 30.782-20.478 18.174-10.304 33.782-15.174l20.566-132.652h208.87l20.566 131.652q15.608 5.87 34.282 15.674 18.674 9.804 31.413 20.978l122.522-55.696 105.435 186.045-111.957 79.826q1.435 8.304 2.218 18.108.782 9.805.782 18.109 0 8.304-.782 17.609-.783 9.304-2.218 17.608l111.957 80.261-106.001 187.175-122.522-56.261q-13.173 10.739-30.847 21.543-17.674 10.805-34.282 15.674l-20.566 130.522h-208.87ZM478.87 706q54 0 92-38t38-92q0-54-38-92t-92-38q-54 0-92 38t-38 92q0 54 38 92t92 38Zm0-60q-29.566 0-49.783-20.5Q408.87 605 408.87 576t20.217-49.5Q449.304 506 478.87 506q29 0 49.5 20.5t20.5 49.5q0 29-20.5 49.5t-49.5 20.5Zm1.13-70Zm-39.478 334.913h78.391l14.565-111.435q33.565-8 63.913-25t54.348-42.696l106 46 34.913-64.652-92.87-67.869q4-17.565 6.783-34.631 2.783-17.065 2.783-34.63t-2.283-34.63q-2.283-17.066-7.283-34.631l93.435-67.869-35.478-64.652-105.435 46q-23-27.131-53.13-45.479-30.131-18.348-65.696-22.782l-14-110.87h-78.956l-13.435 110.87q-35.13 6.434-65.761 24.282-30.63 17.848-54.196 43.979l-104.869-46-35.478 64.652 92.304 67.304q-4 17.565-6.782 34.913-2.783 17.348-2.783 34.913 0 17.565 2.783 35.196 2.782 17.63 6.782 34.63l-92.304 67.304 35.478 64.652 104.869-46q24.566 25.131 55.196 42.696 30.631 17.565 64.761 25.565l13.435 110.87Z" />
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </aside>
+    <article class="settings__cont bg-red-200 px-4 pt-3  sm:bg-green-200 sm:pl-10 sm:pt-8 h-auto sm:w-11/12 sm:ml-16 lg:bg-cyan-200 lg:w-8/12">
+        <h1 class="setting__heading text-2xl font-bold mb-5">Configuracion</h1>
+        <section class="custom mb-14">
+            <h3 class="custom__heading text-lg mb-6">Programacion Personalizada</h3>
+            <div class="custom__days flex gap-3 md:gap-10 items-baseline mb-6">
+                <h4>Dias: </h4>
+                <div class="custom__days__inputs">
+                    <div id="days" class="boxed-check-group boxed-check-primary text-center grid-cols-1 boxed-check-sm">
+                        <label class="boxed-check boxed-check-inline">
+                            <input class="boxed-check-input" type="checkbox" name="lun">
+                            <div class="boxed-check-label">Lun</div>
+                        </label>
+                        <label class="boxed-check boxed-check-inline">
+                            <input class="boxed-check-input" type="checkbox" name="mar">
+                            <div class="boxed-check-label">Mar</div>
+                        </label>
+                        <label class="boxed-check boxed-check-inline">
+                            <input class="boxed-check-input" type="checkbox" name="mie">
+                            <div class="boxed-check-label">Mie</div>
+                        </label>
+                        <label class="boxed-check boxed-check-inline">
+                            <input class="boxed-check-input" type="checkbox" name="jue">
+                            <div class="boxed-check-label">Jue</div>
+                        </label>
+                        <label class="boxed-check boxed-check-inline">
+                            <input class="boxed-check-input" type="checkbox" name="vie">
+                            <div class="boxed-check-label">Vie</div>
+                        </label>
+                        <label class="boxed-check boxed-check-inline">
+                            <input class="boxed-check-input" type="checkbox" name="sab">
+                            <div class="boxed-check-label">Sab</div>
+                        </label>
+                        <label class="boxed-check boxed-check-inline">
+                            <input class="boxed-check-input" type="checkbox" name="dom">
+                            <div class="boxed-check-label">Dom</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="custom__hour flex gap-10 mb-10">
+                <div class="hour__from flex gap-10">
+                    <p>Inicio: </p>
+                    <input type="time" name="" id="hour-start">
+                </div>
+                <div class="hour__from flex gap-8">
+                    <p>Final: </p>
+                    <input type="time" name="" id="hour-end">
+                </div>
+            </div>
+            <div class="custom__porc flex gap-5">
+                <p>Humedad min.</p>
+                <input type="number" name="" id="humedy-value" class="w-20">
+            </div>
+        </section>
+        <section class="units mb-14">
+            <h3 class="custom__heading text-lg mb-6">Unidades de medida / Formatos</h3>
+            <div class="units__temp mb-6">
+                <h3 class="mb-4">Temperatura</h3>
+                <div id="units-temp" class="boxed-check-group boxed-check-primary boxed-check-sm text-base w-full  lg:w-7/12">
+                    <label class="boxed-check boxed-check-inline w-6/12">
+                        <input class="boxed-check-input" type="radio" name="radio-temp">
+                        <div class="boxed-check-label">Celsius</div>
+                    </label>
+                    <label class="boxed-check boxed-check-inline w-6/12 -m-1">
+                        <input class="boxed-check-input" type="radio" name="radio-temp">
+                        <div class="boxed-check-label">Fahrenheit</div>
+                    </label>
+                </div>
+            </div>
+            <div class="units__wind mb-6">
+                <h3 class="mb-4">Velocidad viento</h3>
+                <div id='units-wind' class="boxed-check-group boxed-check-primary boxed-check-sm text-base w-full  lg:w-7/12">
+                    <label class="boxed-check boxed-check-inline w-6/12">
+                        <input class="boxed-check-input" type="radio" name="radio-demo1">
+                        <div class="boxed-check-label">Km/h</div>
+                    </label>
+                    <label class="boxed-check boxed-check-inline w-6/12 -m-1">
+                        <input class="boxed-check-input" type="radio" name="radio-demo1">
+                        <div class="boxed-check-label">Mi/h</div>
+                    </label>
+                </div>
+            </div>
+            <div class="units__hour">
+                <h3 class="mb-4">Formato de hora</h3>
+                <div  id='units-hour' class="boxed-check-group boxed-check-primary boxed-check-sm text-base w-full lg:w-7/12">
+                    <label class="boxed-check boxed-check-inline w-6/12">
+                        <input class="boxed-check-input" type="radio" name="radio-demo2">
+                        <div class="boxed-check-label">12 Horas</div>
+                    </label>
+                    <label class="boxed-check boxed-check-inline w-6/12 -m-1">
+                        <input class="boxed-check-input" type="radio" name="radio-demo2">
+                        <div class="boxed-check-label">24 horas</div>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="alert md:w-7/12 mb-10">
+            <h3 class="text-lg mb-6">Notificaciones</h3>
+            <div class="flex justify-between">
+                <p class="text-base">Mostrar notifiaciones</p>
+                <label class="relative inline-flex items-center cursor-pointer">
+                    <input type="checkbox" value="" class="sr-only peer" id="notification-toogle">
+                    <div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 dark:peer-focus:ring-blue-800 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-blue-600"></div>
+                    <!-- <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span> -->
+                </label>
+            </div>
+        </section>
+        <section class="button-save pb-20 flex justify-end lg:w-7/12 sm:pb-7">
+            <input type="button" value="Guardar" id="save-btn" class="text-lg text-white p-2 bg-blue-600 rounded-md cursor-pointer">
+        </section>
+    </article>
+    <script src="js/getsetting.js"></script>
+</body>
+</html>
