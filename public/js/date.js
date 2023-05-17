@@ -1,7 +1,7 @@
 var myDate = new Date();
 var hrs = myDate.getHours();
 
-var days = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado'];
+var days = ['Domingo', 'Lunes', 'Martes', 'Miercoles', 'Jueves', 'Viernes', 'Sabado', 'Domingo', 'Lunes', 'Martes', 'Miercoles'];
 var months = ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio', 'Julio', 'Agosto', 'Septimebre', 'Octubre', 'Noviembre', 'Diciembre'];
 
 var interval = setInterval(updateDate, 1000);
@@ -39,3 +39,8 @@ document.getElementById('day-2').innerText = days[myDate.getDay()+1];
 document.getElementById('day-3').innerText = days[myDate.getDay()+2];
 document.getElementById('day-4').innerText = days[myDate.getDay()+3];
 document.getElementById('day-5').innerText = days[myDate.getDay()+4];
+
+var hero = document.getElementById('hero-imss');
+hero.style.backgroundImage = 'url("img/centro-medico3.jpg")';
+hero.style.backgroundSize = 'cover';
+hero.style.backgroundPosition = 'center';
