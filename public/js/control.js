@@ -18,7 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
             console.log("bs led", dt[1].power);
             let ldP = dt[1].power;
 
-            humedy.innerText = dt[3].humidity + ' %';
+            humedy.innerText = `Porcentaje de Humedad: ${dt[3].humidity}%`;
 
             if (stP){
                 bomba.checked = stP;
